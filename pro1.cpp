@@ -5,7 +5,6 @@
 # include <cstdlib>
 using namespace std;
 
-
 int main()
 {
 	int i,n,j,k,A,B,numOfGame=0,numOfWin=0;
@@ -22,7 +21,6 @@ int main()
 			cout<<"您一共玩了"<<numOfGame<<"局，"<<"赢了" <<numOfWin<<"局,"<<"输了"<<numOfGame-numOfWin<<"局"<<endl; 
 			flag1=false;
 		}
-	
 		if (ch=='Y'){
 			i=0; n=1;flag2=true;
 			++numOfGame;
@@ -38,11 +36,9 @@ int main()
 			}
 			
 			while (n<=7 && flag2){
-				A=B=0;	
-						
+				A=B=0;
 				cout << "请输入您猜测的数字：" << endl;
 				cin >> guessArray[0] >> guessArray[1] >> guessArray[2] ;
-						
 				for (k=0;k<=2;++k){
 					if (guessArray[k]==numArray[k]) ++A;
 					for (j=0;j<=2;++j){
@@ -50,7 +46,6 @@ int main()
 					}
 				}
 				cout << A << 'A' << B << 'B' << endl;
-				
 				if (A==3) {
 					++numOfWin ;
 					cout << "恭喜，你猜对啦！" << endl; 
