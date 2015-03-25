@@ -1,4 +1,4 @@
-// ²ÂÊı×ÖÓÎÏ·
+// çŒœæ•°å­—æ¸¸æˆ
 
 # include <iostream>
 # include <ctime>
@@ -16,10 +16,10 @@ int main()
 	srand(time(NULL));
 	
 	while(flag1){
-		cout << "ĞèÒªÍæÓÎÏ·Âğ£¨Y/N£©£¿  "<<endl;
+		cout << "éœ€è¦ç©æ¸¸æˆå—ï¼ˆY/Nï¼‰ï¼Ÿ  "<<endl;
 		cin >> ch;
 		if (ch=='N') {
-			cout<<"ÄúÒ»¹²ÍæÁË"<<numOfGame<<"¾Ö£¬"<<"Ó®ÁË" <<numOfWin<<"¾Ö,"<<"ÊäÁË"<<numOfGame-numOfWin<<"¾Ö"<<endl; 
+			cout<<"æ‚¨ä¸€å…±ç©äº†"<<numOfGame<<"å±€ï¼Œ"<<"èµ¢äº†" <<numOfWin<<"å±€,"<<"è¾“äº†"<<numOfGame-numOfWin<<"å±€"<<endl; 
 			flag1=false;
 		}
 	
@@ -40,7 +40,7 @@ int main()
 			while (n<=7 && flag2){
 				A=B=0;	
 						
-				cout << "ÇëÊäÈëÄú²Â²âµÄÊı×Ö£º" << endl;
+				cout << "è¯·è¾“å…¥æ‚¨çŒœæµ‹çš„æ•°å­—ï¼š" << endl;
 				cin >> guessArray[0] >> guessArray[1] >> guessArray[2] ;
 						
 				for (k=0;k<=2;++k){
@@ -53,14 +53,14 @@ int main()
 				
 				if (A==3) {
 					++numOfWin ;
-					cout << "¹§Ï²£¬Äã²Â¶ÔÀ²£¡" << endl; 
+					cout << "æ­å–œï¼Œä½ çŒœå¯¹å•¦ï¼" << endl; 
 					flag2=false;
 				}
 				++n;
 			}
 				
 			if (flag2) {
-				cout <<"ºÜÒÅº¶£¬ÄãÃ»ÓĞÔÚ¹æ¶¨´ÎÊıÄÚ²Â¶Ô¡£´ğ°¸ÊÇ";
+				cout <<"å¾ˆé—æ†¾ï¼Œä½ æ²¡æœ‰åœ¨è§„å®šæ¬¡æ•°å†…çŒœå¯¹ã€‚ç­”æ¡ˆæ˜¯";
 				cout << numArray[0]<<numArray[1]<<numArray[2];
 				cout<<endl;
 			}
